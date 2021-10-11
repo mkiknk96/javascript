@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date-object</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <h1>TravelWorthy</h1>
+  <div id="footer"></div>
+  <script>
+    // 새로운 Date 객체를 저장할 변수를 선언한다.
+    var today = new Date();
+    // 현재 연도를 저장할 변수를 선언한다.
+    var year = today.getFullYear();
+
+    var el = document.getElementById('footer');
+    el.innerHTML = '<p>Copyright &copy;' + year + '</p>';
+
+  </script>
+</body>
+</html>
