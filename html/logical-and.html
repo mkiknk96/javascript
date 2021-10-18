@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>논리연산자</title>
+  <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+  <section id="page1">
+    <h1>Bullseye</h1>
+    <img src="../images/teacher.png" id="teacher" alt="teacher">
+    <section id="answer"></section>
+  </section>
+  <script>
+    var score1 = 8;
+    var score2 = 8;
+    var pass1 = 6;
+    var pass2 = 6;
+
+    // 사용자가 각 회차에 모두 합격했는지 검사하고 결과를 변수에 저장한다.
+    var passBoth = (score1 >= pass1) && (score2 >= pass2);
+
+    var msg = '두 회차 모두 합격: ' + passBoth;
+
+    var el = document.getElementById('answer');
+    el.innerHTML = msg
+  </script>
+</body>
+</html>
