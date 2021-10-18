@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비교연산자</title>
+  <link rel="stylesheet" href="../css/style2.css">
+</head>
+<body>
+  <section id="page1">
+    <h1>Bullseye</h1>
+    <img src="../images/teacher.png" id="teacher" alt="teacher">
+    <section id="answer"></section>
+  </section>
+  <script>
+    var score1 = 90;
+    var score2 = 95;
+    var highScore1 = 75;
+    var highScore2 = 95;
+
+    var comparison = (score1 + score2) > (highScore1 + highScore2)
+
+    var el = document.getElementById('answer');
+    el.innerHTML = '신기록 달성: ' + comparison
+  </script>
+</body>
+</html>
